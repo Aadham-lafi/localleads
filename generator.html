@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Page generator | LocalLead</title>
+        <meta name="description" content="Create a keyword plan, landing page, schema markup and Google Business post.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script>try{var t=localStorage.getItem("ll_theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+    </head>
+    <body>
+        <div id="site-header"></div>
+        <main>
+            <div class="pagehead">
+                <div class="wrap">
+                    <h1>Page generator</h1>
+                    <p>Enter your business details to get a full local SEO kit.</p>
+                </div>
+            </div>
+            <section class="s">
+                <div class="wrap">
+                    <form id="gen" class="card form" novalidate>
+                        <div>
+                            <label for="bn">Business name</label>
+                            <input id="bn" value="Sri Murugan AC Services">
+                        </div>
+                        <div>
+                            <label for="ph">Phone with country code</label>
+                            <input id="ph" value="919876543210" inputmode="numeric">
+                        </div>
+                        <div>
+                            <label for="ct">City</label>
+                            <input id="ct" value="Erode">
+                        </div>
+                        <div class("full"):
+                            "<label for=\"sv\">Services, separated by commas</label><input id=\"sv\" value=\"AC repair, AC installation, AC gas refilling\">"
+                        ></div>
+                        <div class("full"):
+                            "<label for=\"ar\">Areas you serve, separated by commas</label><input id=\"ar\" value=\"Perundurai Road, Sathy Road, B.P. Agraharam, Perumal Malai\">"
+                        ></div>
+                        <div class("full"):
+                            "<p class=\"err\" id=\"ge\"></p><button class=\"btn btn-p\" type=\"submit\">Generate my kit</button>"
+                        ></div>
+                    </form>
+
+                    <div id("out") class("hidden") style("margin-top:36px")><div class("tabs") role("tablist")><button class("on") data-t("kw")>Keywords</button><button data-t("pg")>Landing page</button><button data-t("sc")>Schema markup</button><button data-t("gb")>Google Business post</button></div>
+                    <div id("kw") class("tp")></div><div id("pg") class("tp hidden")></div><div id("sc") class("tp hidden")></div><div id("gb") class("tp hidden")></div></div></div></section></main>
+<div id("site-footer")></div><script src("js/store.js")></script><script src("js/layout.js")></script><script src("js/generator.js")></script></body></html>
